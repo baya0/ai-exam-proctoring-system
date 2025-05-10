@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>examwidgete</class>
+ <widget class="QWidget" name="examwidgete">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1349</width>
+    <height>734</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LayoutDirection::RightToLeft</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*/////////widget////////////////////////*/
+*{
+background-color: rgb(40, 44, 52);
+color:(255,255,255);
+}
+#lcdNumber{
+background-color: rgb(55, 63, 77);
+border-radius:10px; }
+
+   #submitBtn{
+color:(255,255,255);
+	background-color: transparent;
+    border: 1px solid rgba(93, 93, 91,100);
+    border-radius:10px;
+}
+
+ #submitBtn:hover { 
+color:(255,255,255);
+  background-color: rgb(44, 49, 57);
+  border-style: solid;
+ border-radius: 10px;
+}
+ #submitBtn:pressed {
+color:(255,255,255);
+ background-color: rgb(23, 26, 30);
+	background-color: rgba(100, 140, 44,150);
+  border-style: solid;
+  border-radius: 10px;
+}
+
+
+/* /////////////////////////////////////ScrollBars */
+
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(52, 59, 72);
+    width: 8px;
+    margin: 21px 0 21px 0;
+	border-radius: 0px;
+ }
+ QScrollBar::handle:vertical {	
+  
+	background-color: rgba(115, 164, 37,200);
+    min-height: 25px;
+	border-radius: 4px
+ }
+ QScrollBar::add-line:vertical {
+     border: none;
+    background: rgb(55, 63, 77);
+     height: 20px;
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+ QScrollBar::sub-line:vertical {
+	border: none;
+    background: rgb(55, 63, 77);
+     height: 20px;
+	border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+ QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+     background: none;
+ }
+
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+     background: none;
+ }
+
+/*//////Horizonital*/
+QScrollBar:horizontal {
+    border: none;
+    background: rgb(52, 59, 72);
+    height: 8px;
+    margin: 0px 21px 0 21px;
+	border-radius: 0px;
+}
+QScrollBar::handle:horizontal {
+    background-color: rgba(115, 164, 37,200);
+    min-width: 25px;
+	border-radius: 4px
+}
+QScrollBar::add-line:horizontal {
+    border: none;
+    background: rgb(55, 63, 77);
+    width: 20px;
+	border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal {
+    border: none;
+    background: rgb(55, 63, 77);
+    width: 20px;
+	border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+{
+     background: none;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+     background: none;
+}
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Policy::Maximum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>10</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="5" column="0" colspan="3">
+    <widget class="QScrollArea" name="scrollArea_2">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(44, 49, 58);
+border:1px solid rgb(40, 44, 52 );</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1329</width>
+        <height>387</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="0" column="2" alignment="Qt::AlignmentFlag::AlignRight">
+    <widget class="QPushButton" name="noteBtn">
+     <property name="minimumSize">
+      <size>
+       <width>60</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>60</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans</family>
+       <pointsize>9</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+ #noteBtn{
+color:(255,255,255);
+	background-color: transparent;
+ border: 1px solid rgba(93, 93, 91,100);
+    border-radius:7px;
+}
+
+ #noteBtn:hover { 
+color:(255,255,255);
+  background-color: rgb(44, 49, 57);
+  border-style: solid;
+ border-radius:7px;
+}
+ #noteBtn:pressed {
+color:(255,255,255);
+ background-color: rgb(55, 63, 77);
+  border-style: solid;
+  border-radius: 7px;
+}</string>
+     </property>
+     <property name="text">
+      <string>أرسل</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignVCenter">
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+border:1px solid rgb(40, 44, 52);
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LayoutDirection::RightToLeft</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="2" alignment="Qt::AlignmentFlag::AlignRight">
+    <widget class="QTextEdit" name="note_edit">
+     <property name="maximumSize">
+      <size>
+       <width>300</width>
+       <height>160</height>
+      </size>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::RightToLeft</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+border:1px solid rgb(59, 64, 72);
+border-radius:10px;
+background-color: rgb(35, 38, 45);</string>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" rowspan="3">
+    <widget class="QGraphicsView" name="camera_label">
+     <property name="maximumSize">
+      <size>
+       <width>300</width>
+       <height>300</height>
+      </size>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::RightToLeft</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:10px;
+border:1px solid rgb(59, 64, 72);</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTop|Qt::AlignmentFlag::AlignTrailing</set>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QFrame" name="frame_2">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid rgb(40, 44, 52);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QPushButton" name="submitBtn">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"> border: 1px solid rgba(93, 93, 91,100);
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>الانتهاء</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QLabel" name="note_label">
+     <property name="maximumSize">
+      <size>
+       <width>240</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans</family>
+       <pointsize>9</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>اذا كان لديك ملاحظات... قم بإعلامنا هنا :</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

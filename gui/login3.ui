@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>662</width>
+    <height>549</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>30</y>
+      <width>550</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* /////////////////////////////////////////////////////////////////////////////////////////////////
+buttonlogin */
+
+QPushButton#loginBtn{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(44, 49, 58,189), stop:1 rgb(55, 62, 76));
+	border-color: rgb(255, 255, 255);
+
+color:rgba(255,255,255,255);
+border-radius:5px;
+}
+QPushButton#loginBtn:hover{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(50, 60, 90,189), stop:1 rgb(50, 69, 96));
+}
+
+QPushButton#loginBtn:pressed{
+ padding-left:5px;
+ padding-top:5px;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(40, 44, 53,189), stop:1 rgb(49, 63, 98));
+}
+
+
+
+
+
+
+
+
+
+
+ </string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>280</width>
+       <height>430</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/images/images/images/login1.jpg);
+border-top-left-radius : 50px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>30</y>
+       <width>240</width>
+       <height>430</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(250,250,250,1);
+border-bottom-right-radius: 50px;
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>80</y>
+       <width>151</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cocon modified</family>
+       <pointsize>17</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::RightToLeft</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgba(0,0,0,200);
+</string>
+     </property>
+     <property name="text">
+      <string>تسجيل الدخول</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="idLine">
+     <property name="geometry">
+      <rect>
+       <x>295</x>
+       <y>150</y>
+       <width>190</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::RightToLeft</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgba(0,0,0,0);
+border:none;
+border-bottom:2px solid rgba(46,82,101,200);
+color:rgba(0,0,0,240);
+padding-bottom:7px;</string>
+     </property>
+     <property name="locale">
+      <locale language="Arabic" country="Egypt"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>رقم التعريف</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="passLine">
+     <property name="geometry">
+      <rect>
+       <x>295</x>
+       <y>215</y>
+       <width>190</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::RightToLeft</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgba(0,0,0,0);
+border:none;
+border-bottom:2px solid rgba(46,82,101,200);
+color:rgba(0,0,0,240);
+padding-bottom:7px;</string>
+     </property>
+     <property name="placeholderText">
+      <string>كلمة المرور</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="loginBtn">
+     <property name="geometry">
+      <rect>
+       <x>295</x>
+       <y>295</y>
+       <width>190</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>سجل</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>350</y>
+       <width>181</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Cocon modified</family>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgba(0,0,0,210);</string>
+     </property>
+     <property name="text">
+      <string>نسيت كلمة المرور؟</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>60</y>
+       <width>121</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/images/images/images/log.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>170</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 300 13pt &quot;Cocon modified&quot;;</string>
+     </property>
+     <property name="text">
+      <string>مرحباً بكم في أمان </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>400</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 300 15pt &quot;Cocon modified&quot;;</string>
+     </property>
+     <property name="text">
+      <string>2024</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
