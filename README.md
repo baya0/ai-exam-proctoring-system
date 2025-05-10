@@ -47,26 +47,8 @@ An intelligent desktop application for remote exam supervision using face recogn
 
 ## System Architecture
 
-![System Flowchart](assets/)
-[ Start Exam ]
-                 |
-          [ Face Detection ]
-                 |
-      +----------+-----------+
-      |                      |
-[ Face Verified? ]       [Not Verified]
-      |                      |
-[ Anti-Spoofing Check ]    [ Alert ]
-      |
-[ Behavior Monitoring ]
-(eye, mouth, head, sound)
-      |
-[ Object Detection ]
-(using YOLOv5)
-      |
-[ Real-time Alerts + Logs ]
-      |
-     [ End Exam ]
+assets/
+
 
 ---
 
