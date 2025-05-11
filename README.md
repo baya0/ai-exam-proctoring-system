@@ -66,10 +66,8 @@ assests/screenshots/
 This system was developed as a final year graduation project for the Faculty of Mechanical and Electrical Engineering – Damascus University (2023-2024).
 
 ---
-## Author
-[Bayan Abo Razmeh]    
-Location: Syria  
-Email: bayanar00@gmail.com  
+## Author 
+Location: Syria   
 LinkedIn: [https://www.linkedin.com/in/bayan-abo-razmeh-59b8a11a6]  
 GitHub: [https://github.com/baya0]
 
