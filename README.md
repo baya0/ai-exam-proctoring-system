@@ -52,6 +52,45 @@ assets/
 
 ---
 
+
+## requirements 
+# Core GUI Framework
+PySide6>=6.7.0
+
+# Database
+mysql-connector-python>=8.0.0
+
+# Computer Vision and Image Processing
+opencv-python>=4.8.0
+Pillow>=10.0.0
+albumentations>=1.3.0
+
+# Machine Learning and Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+tensorflow>=2.13.0
+scipy>=1.11.0
+numpy>=1.24.0
+
+# Face Recognition and Detection
+facenet-pytorch>=2.5.0
+mtcnn>=0.1.1
+dlib>=19.24.0
+
+# Object Detection
+ultralytics>=8.0.0
+
+# Audio Processing
+sounddevice>=0.4.6
+
+# Security
+bcrypt>=4.0.0
+
+# Optional (for test files)
+PyQt6>=6.5.0
+
+---
+
 ## Screenshots
 assests/screenshots/
 - Login verification page
