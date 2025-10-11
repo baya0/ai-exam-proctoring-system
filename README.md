@@ -47,11 +47,26 @@ An intelligent desktop application for remote exam supervision using face recogn
 
 ## System Architecture
 
-assets/
+System-UseCases/
 
 
 ---
 
+## Screenshots
+# 1- Some of Students Gui
+screenshots/home.png
+screenshots/STUDENT_GUI.png
+screenshots/antispoofing.png
+screenshots/take%20pic.png
+screenshots/exam%20gui.png
+
+# 2- Some of the mentor Gui 
+screenshots/admingui1.png
+screenshots/admingui2.png
+screenshots/admingui5.png
+screenshots/admingui6.png
+
+-----
 
 ## requirements 
 # Core GUI Framework
