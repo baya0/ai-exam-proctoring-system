@@ -62,10 +62,10 @@ System-UseCases/
 ![the exam screen while being mentored](screenshots/exam%20gui.png)
 
 # 2- Some of the mentor Gui 
-![the mentor screen to add students](screenshots/admingui1.png)
-![home screen](screenshots/admingui2.png)
-![home screen](screenshots/admingui5.png)
-![home screen](screenshots/admingui6.png)
+![the mentor screen to add new  students or edit them ](screenshots/admingui1.png)
+![](screenshots/admingui2.png)
+![](screenshots/admingui5.png)
+![](screenshots/admingui6.png)
 
 -----
 
